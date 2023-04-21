@@ -52,10 +52,10 @@ public class AUTMath {
      * @return double
      */
     public static double factorial(double number) {
-        double result = 0;
+        double result = number;
 
-        for (int counter = 0; counter < number; counter++) {
-            result = multiply(result, number);
+        for (int counter = 1; counter < number; counter++) {
+            result = multiply(result, number-counter);
         }
         return result;
     }
