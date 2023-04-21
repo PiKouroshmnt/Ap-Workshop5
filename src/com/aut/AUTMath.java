@@ -70,8 +70,8 @@ public class AUTMath {
     public static double pow(double base, double power) {
         double result = 1;
 
-        for (int counter = 1; counter <= base; counter++) {
-            result = multiply(result, power);
+        for (int counter = 1; counter <= power; counter++) {
+            result = multiply(result, base);
         }
 
         return result;
